@@ -49,8 +49,9 @@ const Services = () => {
           scrollTrigger: {
             trigger: serviceRef.current,
             start: "top center",
-            end: "bottom center",
+            end: "bottom top",
             toggleActions: "play reverse play reverse",
+            markers: true,
           },
         }
       );
