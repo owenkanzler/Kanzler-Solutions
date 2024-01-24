@@ -15,11 +15,18 @@
 .modal-container {
   height: 100vh;
   max-width: 600px;
-  padding: 2rem;
+  padding: 6rem 2rem 2rem 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
   background: #18191a;
+}
+
+.modal-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .modal-content h4 {
@@ -94,7 +101,11 @@
 
 @media (max-width: 425px) {
   .modal-container {
-    padding: 1rem;
+    padding: 6rem 1rem 1rem 1rem;
+  }
+
+  .modal-content {
+    height: 80%;
   }
 
   .modal-img {

@@ -16,10 +16,9 @@ const Mission = () => {
 
       gsap.fromTo(
         missionAnim,
-        { opacity: 0, y: 50 },
+        { opacity: 0 },
         {
           opacity: 1,
-          y: 0,
           duration: 1,
           stagger: 0.25,
           scrollTrigger: {

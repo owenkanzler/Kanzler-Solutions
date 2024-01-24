@@ -39,12 +39,11 @@ const Approach = () => {
 
       gsap.fromTo(
         approachAnim,
-        { opacity: 0, y: 50 },
+        { opacity: 0 },
         {
           opacity: 1,
-          y: 0,
           duration: 1,
-          stagger: 0.25,
+          stagger: 0.125,
           scrollTrigger: {
             trigger: approachRef.current,
             start: "top center",
