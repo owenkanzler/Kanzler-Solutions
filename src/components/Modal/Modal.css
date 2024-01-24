@@ -18,7 +18,7 @@
   padding: 2rem;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   background: #18191a;
 }
 
@@ -62,12 +62,6 @@
   background: url("../../assets/NL-project.png");
   background-size: cover;
   background-position: center;
-}
-
-@media (min-width: 1536px) {
-  .modal-container {
-    align-items: center;
-  }
 }
 
 @media (max-width: 1024px) {
