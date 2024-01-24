@@ -1,0 +1,82 @@
+.mission {
+  position: relative;
+}
+
+.mission-content {
+  display: flex;
+  gap: 4rem;
+}
+
+.mission-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex: 2;
+  padding: 1rem 0;
+}
+
+.mission-text h4 {
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.mission-text h5 {
+  font-weight: 400;
+  font-family: "Lora", sans-serif;
+  font-style: italic;
+  max-width: 500px;
+  margin-bottom: 1rem;
+}
+
+.mission-img {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+}
+
+@media (max-width: 1024px) {
+  .mission-text h4 {
+    margin-bottom: 1rem;
+  }
+
+  .mission-content {
+    gap: 1rem;
+  }
+
+  .mission-img img {
+    width: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .mission-content {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .mission-text h5 {
+    max-width: 300px;
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .mission-content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .mission-img img {
+    width: 200px;
+  }
+
+  .mission-text h4 {
+    margin-bottom: 0.5rem;
+  }
+
+  .mission-text h5 {
+    margin: 0 auto;
+    margin-bottom: 0.5rem;
+    max-width: 400px;
+  }
+}

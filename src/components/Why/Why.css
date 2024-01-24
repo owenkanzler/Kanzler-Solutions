@@ -1,0 +1,73 @@
+.why .container {
+  align-items: flex-start;
+}
+
+.why h4 {
+  font-weight: 400;
+  margin-bottom: 4rem;
+}
+
+.why-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.why-content-top,
+.why-content-bottom {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.reason {
+  text-align: center;
+  background-color: #7a7265;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  padding: 2rem;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.reason h6 {
+  font-weight: 400;
+  font-style: italic;
+  max-width: 200px;
+  font-family: "Lora", sans-serif;
+  transition: 0.3s;
+}
+
+.reason svg {
+  font-size: 2rem;
+  transition: 0.3s;
+}
+
+.reason:hover {
+  background-color: #7a726550;
+}
+
+@media (max-width: 1024px) {
+  .why-content-top,
+  .why-content-bottom {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .why h4 {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .why-content-top,
+  .why-content-bottom {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

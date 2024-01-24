@@ -1,0 +1,76 @@
+.hero {
+  height: 100vh;
+  background: url("../../assets/hero-bg.png");
+  background-size: cover;
+  background-position: bottom;
+}
+
+.hero .container {
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.hero-content {
+  width: 100%;
+}
+
+.hero h5 {
+  font-family: "Lora", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.hero h1 {
+  font-weight: 400;
+  line-height: 1;
+  margin: 0.5rem 0 2rem 0;
+  max-width: 750px;
+  letter-spacing: -0.1rem;
+}
+
+.hero p {
+  max-width: 700px;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.hero a {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  text-decoration: none;
+  color: #f5eee7;
+  max-width: 125px;
+  font-size: 1.1rem;
+  transition: 0.3s;
+}
+
+.hero svg {
+  color: #f5eee7;
+  transition: 0.3s;
+}
+
+.hero a:hover svg {
+  margin-left: 0.75rem;
+  color: #7a7265;
+}
+
+.hero a:hover {
+  color: #7a7265;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    margin-bottom: 1rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero a {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,39 @@
+.services .container {
+  align-items: flex-start;
+}
+
+.services h4 {
+  font-weight: 400;
+  margin-bottom: 4rem;
+}
+
+.services-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.services-content h6 {
+  margin: 1rem 0 0.5rem 0;
+  font-family: "Lora", sans-serif;
+  font-style: italic;
+}
+
+.services-content svg {
+  font-size: 1.3rem;
+  transition: 0.3s;
+}
+
+.service:hover svg {
+  color: #7a7265;
+}
+
+@media (max-width: 768px) {
+  .services h4 {
+    margin-bottom: 2rem;
+  }
+
+  .services-content {
+    grid-template-columns: none;
+  }
+}

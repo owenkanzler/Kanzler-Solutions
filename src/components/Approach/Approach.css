@@ -1,0 +1,95 @@
+.approach {
+  position: relative;
+}
+
+.approach .container {
+  align-items: flex-start;
+}
+
+.approach h4 {
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+.approach-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.approach-steps {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 2rem;
+  padding: 1rem 0;
+}
+
+.approach-steps h6 {
+  font-family: "Lora", sans-serif;
+  font-style: italic;
+  margin: 1rem 0 0.5rem 0;
+}
+
+.approach-steps svg {
+  font-size: 1.3rem;
+  color: #f5eee7;
+}
+
+.approach-img {
+  justify-self: flex-end;
+}
+
+.approach .color {
+  right: 0;
+}
+
+@media (max-width: 1024px) {
+  .approach-content {
+    gap: 2rem;
+  }
+
+  .approach-steps {
+    gap: 1rem;
+  }
+
+  .approach-img img {
+    width: 400px;
+  }
+
+  .approach-content h4 {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .approach-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .approach-steps {
+    order: 2;
+  }
+
+  .approach-img {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 640px) {
+  .approach-content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .approach-img img {
+    width: 300px;
+  }
+}
+
+@media (max-width: 425px) {
+  .approach-img img {
+    width: 200px;
+  }
+}

@@ -1,0 +1,36 @@
+.navbar {
+  padding: 2rem 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.navbar .container {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 4rem;
+}
+
+.navbar a {
+  color: #f5eee7;
+  text-decoration: none;
+  font-style: italic;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #7a7265;
+}
+
+@media (max-width: 1024px) {
+  .navbar ul {
+    display: none;
+  }
+}

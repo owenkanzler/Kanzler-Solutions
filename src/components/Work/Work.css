@@ -1,0 +1,109 @@
+.work {
+  position: relative;
+}
+
+.work .container {
+  align-items: flex-start;
+}
+
+.work h4 {
+  margin-bottom: 4rem;
+  font-weight: 400;
+}
+
+.work-content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.project-img {
+  width: 100%;
+  height: 400px;
+  background-color: #7a7265;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.project1 .project-img {
+  background: url("../../assets/OS-project.png"), no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.project2 .project-img {
+  background: url("../../assets/PFE-project.png"), no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.project3 .project-img {
+  background: url("../../assets/NL-project.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.project-text h6 {
+  font-family: "Lora", sans-serif;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.project-text .project-link {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.project-link .links {
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-link a,
+.project-link .case {
+  color: #f5eee7;
+  text-decoration: none;
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.project-link svg {
+  color: #f5eee7;
+  transition: 0.3s;
+}
+
+.project-link a:hover svg,
+.project-link .case:hover svg {
+  margin-left: 0.75rem;
+  color: #7a7265;
+}
+
+.project-link a:hover,
+.project-link .case:hover {
+  color: #7a7265;
+}
+
+.project-link .icons {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.5rem;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .work h4 {
+    margin-bottom: 2rem;
+  }
+
+  .work-content {
+    grid-template-columns: none;
+  }
+}

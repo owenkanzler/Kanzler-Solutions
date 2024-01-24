@@ -1,0 +1,110 @@
+.about {
+  position: relative;
+}
+
+.about-content {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  gap: 4rem;
+}
+
+.about-content h4 {
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.about-content h5 {
+  font-weight: 400;
+  font-family: "Lora", sans-serif;
+  font-style: italic;
+  max-width: 500px;
+  margin-bottom: 1rem;
+}
+
+.about-content .copy {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.about-content a {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: #f5eee7;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.about-content svg {
+  color: #f5eee7;
+  transition: 0.3s;
+}
+
+.about-content a:hover svg {
+  margin-left: 0.75rem;
+  color: #7a7265;
+}
+
+.about-content a:hover {
+  color: #7a7265;
+}
+
+.about-text {
+  padding: 1rem 0;
+}
+
+@media (max-width: 1024px) {
+  .about-content {
+    gap: 2rem;
+  }
+
+  .about-img img {
+    width: 400px;
+  }
+
+  .about-content h4 {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+  }
+
+  .about-text h5 {
+    margin-bottom: 0.5rem;
+  }
+
+  .about .copy {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .about-content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-img img {
+    width: 300px;
+  }
+
+  .about-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 425px) {
+  .about-img img {
+    width: 200px;
+  }
+}
