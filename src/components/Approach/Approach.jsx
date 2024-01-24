@@ -48,7 +48,7 @@ const Approach = () => {
           scrollTrigger: {
             trigger: approachRef.current,
             start: "top center",
-            end: "bottom center",
+            end: "bottom top",
             toggleActions: "play reverse play reverse",
           },
         }

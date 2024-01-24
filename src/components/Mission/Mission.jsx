@@ -25,7 +25,7 @@ const Mission = () => {
           scrollTrigger: {
             trigger: missionRef.current,
             start: "top center",
-            end: "bottom center",
+            end: "bottom top",
             toggleActions: "play reverse play reverse",
           },
         }
