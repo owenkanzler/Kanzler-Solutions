@@ -70,4 +70,8 @@
   .why-content-bottom {
     grid-template-columns: repeat(1, 1fr);
   }
+
+  .reason {
+    height: 150px;
+  }
 }
