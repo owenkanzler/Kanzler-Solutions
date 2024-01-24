@@ -39,8 +39,8 @@ const Hero = () => {
           scrollTrigger: {
             trigger: heroRef.current,
             start: "top center",
-            end: "bottom top",
-            toggleActions: "play reverse play reverse",
+            end: "bottom center",
+            // toggleActions: "play reverse play reverse",
           },
         }
       );
@@ -59,8 +59,8 @@ const Hero = () => {
           scrollTrigger: {
             trigger: heroRef.current,
             start: "top center",
-            end: "bottom top",
-            toggleActions: "play reverse play reverse",
+            end: "bottom center",
+            // toggleActions: "play reverse play reverse",
           },
         }
       );

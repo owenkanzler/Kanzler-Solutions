@@ -25,8 +25,8 @@ const Mission = () => {
           scrollTrigger: {
             trigger: missionRef.current,
             start: "top center",
-            end: "bottom top",
-            toggleActions: "play reverse play reverse",
+            end: "bottom center",
+            // toggleActions: "play reverse play reverse",
           },
         }
       );
@@ -56,8 +56,8 @@ const Mission = () => {
           scrollTrigger: {
             trigger: missionRef.current,
             start: "top center",
-            end: "bottom top",
-            toggleActions: "play reverse play reverse",
+            end: "bottom center",
+            // toggleActions: "play reverse play reverse",
           },
         }
       );

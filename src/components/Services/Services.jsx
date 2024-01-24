@@ -49,8 +49,8 @@ const Services = () => {
           scrollTrigger: {
             trigger: serviceRef.current,
             start: "top center",
-            end: "bottom top",
-            toggleActions: "play reverse play reverse",
+            end: "bottom center",
+            // toggleActions: "play reverse play reverse",
           },
         }
       );
@@ -80,8 +80,8 @@ const Services = () => {
           scrollTrigger: {
             trigger: serviceRef.current,
             start: "top center",
-            end: "bottom top",
-            toggleActions: "play reverse play reverse",
+            end: "bottom center",
+            // toggleActions: "play reverse play reverse",
           },
         }
       );

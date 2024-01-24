@@ -27,8 +27,8 @@ const About = () => {
           scrollTrigger: {
             trigger: aboutRef.current,
             start: "top center",
-            end: "bottom top",
-            toggleActions: "play reverse play reverse",
+            end: "bottom center",
+            // toggleActions: "play reverse play reverse",
           },
         }
       );
@@ -58,8 +58,8 @@ const About = () => {
           scrollTrigger: {
             trigger: aboutRef.current,
             start: "top center",
-            end: "bottom top",
-            toggleActions: "play reverse play reverse",
+            end: "bottom center",
+            // toggleActions: "play reverse play reverse",
           },
         }
       );
