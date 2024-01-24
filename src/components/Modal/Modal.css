@@ -30,13 +30,30 @@
   margin-top: 2rem;
   cursor: pointer;
   border: 0;
-  background-color: #7a7265;
+  background-color: transparent;
   color: #f5eee7;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
   border-radius: 5px;
-  padding: 12px 40px;
   font-size: 1rem;
   font-style: italic;
   font-family: "Lora", sans-serif;
+  transition: 0.3s;
+}
+
+.modal-content button svg {
+  color: #f5eee7;
+  transition: 0.3s;
+}
+
+.modal-content button:hover svg {
+  margin-left: 0.75rem;
+  color: #7a7265;
+}
+
+.modal-content button:hover {
+  color: #7a7265;
 }
 
 .modal-img {

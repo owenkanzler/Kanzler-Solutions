@@ -2,6 +2,8 @@ import React from "react";
 import "./Modal.css";
 import { motion } from "framer-motion";
 
+import { FaAngleRight } from "react-icons/fa6";
+
 const dropIn = {
   hidden: {
     x: "100vw",
@@ -40,14 +42,9 @@ const Modal3 = ({ children, isOpen, onClose }) => {
         >
           <div className="modal-content modal3">
             {children}
-            <motion.button
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-              type="button"
-              onClick={onClose}
-            >
-              Close
-            </motion.button>
+            <button type="button" onClick={onClose}>
+              Close <FaAngleRight />
+            </button>
           </div>
         </motion.div>
       </motion.div>
