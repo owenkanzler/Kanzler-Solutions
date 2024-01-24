@@ -27,7 +27,7 @@ const About = () => {
           scrollTrigger: {
             trigger: aboutRef.current,
             start: "top center",
-            end: "bottom center",
+            end: "bottom top",
             toggleActions: "play reverse play reverse",
           },
         }

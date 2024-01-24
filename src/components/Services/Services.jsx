@@ -51,7 +51,6 @@ const Services = () => {
             start: "top center",
             end: "bottom top",
             toggleActions: "play reverse play reverse",
-            markers: true,
           },
         }
       );
