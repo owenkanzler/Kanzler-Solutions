@@ -1,7 +1,7 @@
 import React, { useRef, useLayoutEffect } from "react";
 import "./Mission.css";
 import Container from "../Container/Container";
-import wall from "../../assets/wall.png";
+import wave from "../../assets/wave.png";
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -70,7 +70,7 @@ const Mission = () => {
         <div className="mission-content">
           <div className="mission-img mission-anim">
             <img
-              src={wall}
+              src={wave}
               alt="Wave Image"
               loading="lazy"
               height="auto"
