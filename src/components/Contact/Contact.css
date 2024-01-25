@@ -81,4 +81,8 @@
   .button {
     padding: 1rem;
   }
+
+  .contact {
+    padding: 4rem 1rem 1rem 1rem;
+  }
 }

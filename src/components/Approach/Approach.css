@@ -13,6 +13,7 @@
 .approach-content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  width: 100%;
 }
 
 .approach-steps {
@@ -20,13 +21,17 @@
   flex-direction: column;
   justify-content: flex-end;
   gap: 2rem;
-  padding: 1rem 0;
+  padding: 1rem 0 2rem 0;
 }
 
 .approach-steps h6 {
   font-family: "Lora", sans-serif;
   font-style: italic;
   margin: 1rem 0 0.5rem 0;
+}
+
+.approach-steps p {
+  max-width: 550px;
 }
 
 .approach-steps svg {
