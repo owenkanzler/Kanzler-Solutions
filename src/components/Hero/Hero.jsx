@@ -1,6 +1,7 @@
 import React, { useRef, useLayoutEffect } from "react";
 import "./hero.css";
 import Container from "../Container/Container";
+import { motion } from "framer-motion";
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -72,8 +73,11 @@ const Hero = () => {
     <section className="hero" ref={heroRef}>
       <Container>
         <div className="hero-content">
-          <h5>We Are, Kanzler Solutions.</h5>
-          <h1>Elevate Your Brand with Captivating, Purposeful Web Design.</h1>
+          <h6>We Are, Kanzler Solutions.</h6>
+          <h1>
+            Elevate Your Brand with Captivating, Purposeful Web{" "}
+            <span className="hero-span">Design and Development.</span>
+          </h1>
           <p className="hero-anim">
             Empower your online presence with Kanzler Solutions – where
             innovative web design meets seamless development. Transforming

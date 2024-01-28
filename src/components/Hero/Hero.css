@@ -14,7 +14,7 @@
   width: 100%;
 }
 
-.hero h5 {
+.hero h6 {
   font-family: "Lora", sans-serif;
   font-style: italic;
   font-weight: 400;
@@ -23,16 +23,15 @@
 
 .hero h1 {
   font-weight: 400;
-  line-height: 1;
+  line-height: 1.1;
   margin: 0.5rem 0 2rem 0;
-  max-width: 750px;
-  letter-spacing: -0.1rem;
+  max-width: 1000px;
 }
 
 .hero p {
   max-width: 700px;
-  margin-bottom: 2rem;
   font-size: 1.1rem;
+  margin-bottom: 1rem;
 }
 
 .hero a {
@@ -70,7 +69,8 @@
     margin-bottom: 1rem;
   }
 
-  .hero a {
+  .hero .contact {
     font-size: 1rem;
+    max-width: 200px;
   }
 }

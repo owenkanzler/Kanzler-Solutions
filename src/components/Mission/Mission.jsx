@@ -1,7 +1,8 @@
 import React, { useRef, useLayoutEffect } from "react";
 import "./Mission.css";
 import Container from "../Container/Container";
-import wave from "../../assets/wave.png";
+import laptop from "../../assets/laptop.png";
+import office from "../../assets/office.png";
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -68,27 +69,42 @@ const Mission = () => {
     <section className="mission" ref={missionRef}>
       <Container>
         <div className="mission-content">
-          <div className="mission-img mission-anim">
-            <img
-              src={wave}
-              alt="Wave Image"
-              loading="lazy"
-              height="auto"
-              width="400px"
-            />
+          <div className="mission-content-top">
+            <div className="mission-img mission-img1 mission-anim">
+              <img
+                src={office}
+                alt="Wave Image"
+                loading="lazy"
+                height="400px"
+                width="100%"
+              />
+            </div>
+            <div className="mission-img mission-img2 mission-anim">
+              <img
+                src={laptop}
+                alt="Wave Image"
+                loading="lazy"
+                height="300px "
+                width="auto"
+              />
+            </div>
           </div>
-          <div className="mission-text">
-            <h4>Our Mission To Your Success</h4>
-            <h5 className="mission-anim">
-              Digital Excellence Empowering <br /> Business Growth
-            </h5>
-            <p className="mission-anim">
-              At Kanzler Solutions, our unwavering commitment is to empower
-              businesses through innovative digital solutions. We specialize in
-              crafting bespoke websites that not only reflect brand identity but
-              also drive sustained growth, foster engagement, and pave the way
-              for unprecedented success in the dynamic online landscape.
-            </p>
+          <div className="mission-content-bottom">
+            <div className="fill"></div>
+            <div className="mission-text">
+              <h4>Our Mission To Your Success</h4>
+              <h5 className="mission-anim">
+                Digital Excellence <br /> Empowering Business Growth
+              </h5>
+              <p className="mission-anim">
+                At Kanzler Solutions, our unwavering commitment is to empower
+                businesses through innovative digital solutions. We specialize
+                in crafting bespoke websites that not only reflect brand
+                identity but also drive sustained growth, foster engagement, and
+                pave the way for unprecedented success in the dynamic online
+                landscape.
+              </p>
+            </div>
           </div>
         </div>
       </Container>

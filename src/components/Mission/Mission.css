@@ -1,82 +1,101 @@
-.mission {
-  position: relative;
-}
-
 .mission-content {
   display: flex;
-  gap: 4rem;
+  flex-direction: column;
 }
 
-.mission-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  flex: 2;
-  padding: 1rem 0;
+.mission-content-top {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.mission-content-bottom {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .mission-text h4 {
   font-weight: 400;
-  margin-bottom: 2rem;
+  margin-bottom: 1.25rem;
 }
 
 .mission-text h5 {
   font-weight: 400;
   font-family: "Lora", sans-serif;
   font-style: italic;
-  max-width: 500px;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
 }
 
 .mission-img {
-  flex: 1;
   display: flex;
   align-items: flex-end;
+  overflow: hidden;
+}
+
+.mission-img img {
+  object-fit: cover;
+  transition: 0.3s;
+}
+
+.mission-img:hover img {
+  scale: 1.05;
+}
+
+.mission-img2 {
+  grid-column: 2 / span 2;
+  align-self: center;
 }
 
 @media (max-width: 1024px) {
-  .mission-text h4 {
-    margin-bottom: 1rem;
-  }
-
   .mission-content {
     gap: 1rem;
   }
 
-  .mission-img img {
-    width: 300px;
-  }
-}
-
-@media (max-width: 768px) {
-  .mission-content {
-    flex-direction: column;
-    gap: 0;
+  .mission-content h4 {
+    margin-bottom: 1rem;
   }
 
-  .mission-text h5 {
-    max-width: 300px;
-    margin-bottom: 0.5rem;
+  .mission-content-top {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .mission-img2 img {
+    width: 100%;
+  }
+
+  .mission-content-bottom {
+    display: flex;
+  }
+
+  .mission-content-bottom .fill {
+    display: none;
   }
 }
 
 @media (max-width: 640px) {
-  .mission-content {
-    align-items: center;
+  .mission-img1 img {
+    height: 250px;
+  }
+
+  .mission-img2 img {
+    height: 175px;
+  }
+
+  .mission-text {
     text-align: center;
   }
+}
 
-  .mission-img img {
-    width: 200px;
+@media (max-width: 425px) {
+  .mission-content-top {
+    gap: 1rem;
   }
 
-  .mission-text h4 {
-    margin-bottom: 0.5rem;
+  .mission-img1 img {
+    height: 175px;
   }
 
-  .mission-text h5 {
-    margin: 0 auto;
-    margin-bottom: 0.5rem;
-    max-width: 400px;
+  .mission-img2 img {
+    height: 125px;
   }
 }

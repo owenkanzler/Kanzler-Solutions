@@ -1,7 +1,6 @@
 import React, { useRef, useLayoutEffect } from "react";
 import "./Approach.css";
 import Container from "../Container/Container";
-import steps from "../../assets/stairs.png";
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -90,26 +89,15 @@ const Approach = () => {
   return (
     <section className="approach" ref={approachRef}>
       <Container>
+        <h4>Here's How We Approach Your Project</h4>
         <div className="approach-content">
-          <div className="approach-steps">
-            <h4>Here's How We Approach Your Project</h4>
-            {approachSteps.map((step) => (
-              <div className="step" key={step.name}>
-                <div className="approach-anim">{step.icon}</div>
-                <h6 className="approach-anim">{step.name}</h6>
-                <p className="approach-anim">{step.description}</p>
-              </div>
-            ))}
-          </div>
-          <div className="approach-img approach-anim">
-            <img
-              src={steps}
-              alt="Image of steps"
-              loading="lazy"
-              width="500px"
-              height="auto"
-            />
-          </div>
+          {approachSteps.map((step, index) => (
+            <div className={`step step-${index}`} key={index}>
+              <div className="approach-anim">{step.icon}</div>
+              <h6 className="approach-anim">{step.name}</h6>
+              <p className="approach-anim">{step.description}</p>
+            </div>
+          ))}
         </div>
       </Container>
     </section>

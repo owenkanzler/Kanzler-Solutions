@@ -52,7 +52,7 @@ const About = () => {
         {
           opacity: 1,
           duration: 1,
-          stagger: 0.035,
+          stagger: 0.02,
           ease: "power3.out",
           scrollTrigger: {
             trigger: aboutRef.current,
@@ -69,37 +69,34 @@ const About = () => {
   return (
     <section className="about" id="about" ref={aboutRef}>
       <Container>
+        <h4>
+          Strategic design is the silent force shaping companies' success,
+          enhancing brand resonance, and crafting experiences that captivate and
+          endure.
+        </h4>
         <div className="about-content">
           <div className="about-img about-anim">
-            <img
-              src={minneaplois}
-              alt="Image of Minneapolis"
-              loading="lazy"
-              width="500px"
-              height="auto"
-            />
+            <div>
+              <img
+                src={minneaplois}
+                alt="Minneapolis"
+                loading="lazy"
+                height="400px"
+                width="400px"
+              />
+            </div>
           </div>
           <div className="about-text">
-            <h4>About Us</h4>
-            <h5 className="about-anim">
-              Transforming Visions into Digital Reality with Kanzler Solutions.
-            </h5>
-            <div className="copy">
-              <p className="about-anim">
-                Kanzler Solutions is a pioneering force in web design and
-                development. With a passion for innovation, we seamlessly blend
-                creativity and technology to deliver bespoke digital solutions.
-                From custom web design to SEO optimization, we empower
-                businesses to thrive in the ever-evolving online landscape.
-              </p>
-              <p className="about-anim">
-                Digital artisans crafting success. Elevate with us. Innovate
-                excellence in web design, development, and SEO. Your journey,
-                our expertise.
-              </p>
-            </div>
-            <a href="#contact" aria-label="Get in touch" className="about-anim">
-              Get In Touch <FaAngleRight />
+            <h6 className="about-anim">About Us</h6>
+            <p className="about-anim">
+              Kanzler Solutions is a pioneering force in web design and
+              development. With a passion for innovation, we seamlessly blend
+              creativity and technology to deliver bespoke digital solutions.
+              From custom web design to SEO optimization, we empower businesses
+              to thrive in the ever-evolving online landscape.
+            </p>
+            <a href="#contact" aria-label="Contact Us" className="about-anim">
+              Contact Us <FaAngleRight />
             </a>
           </div>
         </div>

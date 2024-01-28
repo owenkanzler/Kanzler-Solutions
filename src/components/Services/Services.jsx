@@ -7,7 +7,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 import { FaEye, FaLaptopCode, FaCode } from "react-icons/fa";
-import { FaE } from "react-icons/fa6";
 
 const services = [
   {

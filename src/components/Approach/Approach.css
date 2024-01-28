@@ -1,100 +1,55 @@
-.approach {
-  position: relative;
-}
-
 .approach .container {
   align-items: flex-start;
 }
 
 .approach h4 {
   font-weight: 400;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
+
 .approach-content {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
 }
 
-.approach-steps {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  gap: 2rem;
-  padding: 1rem 0 2rem 0;
-}
-
-.approach-steps h6 {
+.approach-content h6 {
+  margin: 1rem 0 0.5rem 0;
   font-family: "Lora", sans-serif;
   font-style: italic;
-  margin: 1rem 0 0.5rem 0;
 }
 
-.approach-steps p {
-  max-width: 550px;
-}
-
-.approach-steps svg {
+.approach-content svg {
   font-size: 1.3rem;
-  color: #f5eee7;
+  transition: 0.3s;
 }
 
-.approach-img {
-  justify-self: flex-end;
+.step:hover svg {
+  color: #7a7265;
 }
 
-.approach .color {
-  right: 0;
+.step-1 {
+  margin-top: 3rem;
 }
 
-@media (max-width: 1024px) {
-  .approach-content {
-    gap: 2rem;
-  }
-
-  .approach-steps {
-    gap: 1rem;
-  }
-
-  .approach-img img {
-    width: 400px;
-  }
-
-  .approach-content h4 {
-    margin-bottom: 1rem;
-  }
+.step-2 {
+  margin-top: 6rem;
 }
 
 @media (max-width: 768px) {
+  .approach h4 {
+    margin-bottom: 2rem;
+  }
+
   .approach-content {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
+    grid-template-columns: none;
   }
 
-  .approach-steps {
-    order: 2;
+  .step-1 {
+    margin-top: 0;
   }
 
-  .approach-img {
-    display: flex;
-    justify-content: flex-end;
-  }
-}
-
-@media (max-width: 640px) {
-  .approach-content {
-    align-items: center;
-    text-align: center;
-  }
-
-  .approach-img img {
-    width: 300px;
-  }
-}
-
-@media (max-width: 425px) {
-  .approach-img img {
-    width: 200px;
+  .step-2 {
+    margin-top: 0;
   }
 }

@@ -16,40 +16,37 @@ import {
 } from "react-icons/fa6";
 import { BsFileEarmarkRichtext } from "react-icons/bs";
 
-const reasonsTop = [
+const reasons = [
   {
-    reason: "Allows you to expand your audience",
+    description: "Allows you to expand your audience",
     icon: <FaPeopleGroup />,
   },
   {
-    reason: "Available 24/7",
+    description: "Available 24/7",
     icon: <FaCalendarDays />,
   },
   {
-    reason: "Allows you to reach a global audience",
+    description: "Allows you to reach a global audience",
     icon: <FaEarthAmericas />,
   },
   {
-    reason: "Quickly editable",
+    description: "Quickly editable",
     icon: <FaPencil />,
   },
-];
-
-const reasonsBottom = [
   {
-    reason: "An unlimited source of information",
+    description: "An unlimited source of information",
     icon: <BsFileEarmarkRichtext />,
   },
   {
-    reason: "Increases your credibility",
+    description: "Increases your credibility",
     icon: <FaArrowUpWideShort />,
   },
   {
-    reason: "Sets you apart from your competitors",
+    description: "Sets you apart from your competitors",
     icon: <FaStar />,
   },
   {
-    reason: "Saves you time",
+    description: "Saves you time",
     icon: <FaClock />,
   },
 ];
@@ -59,51 +56,6 @@ const Why = () => {
 
   useLayoutEffect(() => {
     let ctx = gsap.context(() => {
-      const whyTop = gsap.utils.toArray(".why-top-anim");
-      const whyBottom = gsap.utils.toArray(".why-bottom-anim");
-
-      gsap.fromTo(
-        whyTop,
-        {
-          opacity: 0,
-          x: -25,
-        },
-        {
-          opacity: 1,
-          x: 0,
-          duration: 0.1,
-          stagger: 0.1,
-          ease: "none",
-          scrollTrigger: {
-            trigger: whyRef.current,
-            start: "top center",
-            end: "bottom center",
-            // toggleActions: "play reverse play reverse",
-          },
-        }
-      );
-
-      gsap.fromTo(
-        whyBottom,
-        {
-          opacity: 0,
-          x: 25,
-        },
-        {
-          opacity: 1,
-          x: 0,
-          duration: 0.1,
-          stagger: 0.1,
-          ease: "none",
-          scrollTrigger: {
-            trigger: whyRef.current,
-            start: "top center",
-            end: "bottom center",
-            // toggleActions: "play reverse play reverse",
-          },
-        }
-      );
-
       const whyHeading = whyRef.current.querySelector("h4");
 
       // Split each word into separate characters
@@ -142,25 +94,35 @@ const Why = () => {
     <section className="why" ref={whyRef}>
       <Container>
         <h4>Why A Website Is So Powerful</h4>
-        <div className="why-content">
-          <div className="why-content-top">
-            {reasonsTop.map((reason) => (
-              <div className="reason why-top-anim" key={reason.reason}>
+      </Container>
+      <div className="inner">
+        <div className="wrapper">
+          <div className="reasons" style={{ "--speed": `${18000}ms` }}>
+            {reasons.map((reason, index) => (
+              <div key={index + 1} className="reason">
                 <span>{reason.icon}</span>
-                <h6>{reason.reason}</h6>
+                <h6>{reason.description}</h6>
               </div>
             ))}
           </div>
-          <div className="why-content-bottom">
-            {reasonsBottom.map((reason) => (
-              <div className="reason why-bottom-anim" key={reason.reason}>
+          <div className="reasons" style={{ "--speed": `${18000}ms` }}>
+            {reasons.map((reason, index) => (
+              <div key={index + 1} className="reason">
                 <span>{reason.icon}</span>
-                <h6>{reason.reason}</h6>
+                <h6>{reason.description}</h6>
+              </div>
+            ))}
+          </div>
+          <div className="reasons" style={{ "--speed": `${18000}ms` }}>
+            {reasons.map((reason, index) => (
+              <div key={index + 1} className="reason">
+                <span>{reason.icon}</span>
+                <h6>{reason.description}</h6>
               </div>
             ))}
           </div>
         </div>
-      </Container>
+      </div>
     </section>
   );
 };
