@@ -108,6 +108,7 @@ const Mission = () => {
           </div>
         </div>
       </Container>
+      <div className="blur"></div>
     </section>
   );
 };

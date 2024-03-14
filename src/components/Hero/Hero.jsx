@@ -7,7 +7,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
-import { FaAngleRight } from "react-icons/fa6";
+import { FaAngleDown } from "react-icons/fa6";
 
 const Hero = () => {
   const heroRef = useRef(null);
@@ -15,9 +15,16 @@ const Hero = () => {
   useLayoutEffect(() => {
     let ctx = gsap.context(() => {
       const heading = heroRef.current.querySelector("h1");
+      const contact = heroRef.current.querySelector("a");
       const heroAnim = gsap.utils.toArray(".hero-anim");
 
       // Split each word into separate characters
+      const contactWords = contact.textContent.split(" ");
+      const contactChars = contactWords.map((word) => {
+        return `<span class="char">${[...word].join(
+          "</span><span class='char'>"
+        )}</span>`;
+      });
       const words = heading.textContent.split(" ");
       const chars = words.map((word) => {
         return `<span class="char">${[...word].join(
@@ -26,6 +33,7 @@ const Hero = () => {
       });
       // Replace the content of h1 with separated characters
       heading.innerHTML = chars.join(" ");
+      contact.innerHTML = contactChars.join(" ");
 
       gsap.fromTo(
         heading.querySelectorAll(".char"),
@@ -73,22 +81,18 @@ const Hero = () => {
     <section className="hero" ref={heroRef}>
       <Container>
         <div className="hero-content">
-          <h6>We Are, Kanzler Solutions.</h6>
-          <h1>
-            Elevate Your Brand with Captivating, Purposeful Web{" "}
-            <span className="hero-span">Design and Development.</span>
-          </h1>
-          <p className="hero-anim">
-            Empower your online presence with Kanzler Solutions – where
-            innovative web design meets seamless development. Transforming
-            visions into digital reality, we craft dynamic websites that elevate
-            your brand to new heights.
-          </p>
+          <div className="hero-text">
+            <h1>Compelling Web Design and Development</h1>
+            <p className="hero-anim">
+              Elevate your brand with Kanzler Solutions. Our dynamic websites
+              bring your vision to life.
+            </p>
+          </div>
           <div className="btn-box hero-anim">
             <a href="#contact" aria-label="Contact Us">
               Contact Us
-              <FaAngleRight />
             </a>
+            <FaAngleDown />
           </div>
         </div>
       </Container>

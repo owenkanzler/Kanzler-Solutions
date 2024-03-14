@@ -1,3 +1,7 @@
+.mission {
+  position: relative;
+}
+
 .mission-content {
   display: flex;
   flex-direction: column;
@@ -7,6 +11,15 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
+}
+
+.mission .blur {
+  bottom: 50%;
+  left: 30%;
+  transform: translateX(-50%) translateY(50%);
+  width: 250px;
+  height: 250px;
+  filter: blur(100px);
 }
 
 .mission-content-bottom {

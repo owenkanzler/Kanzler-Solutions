@@ -39,6 +39,16 @@ p {
   font-size: 1rem;
 }
 
+.blur {
+  width: 300px;
+  height: 300px;
+  border-radius: 300px;
+  background-color: #7a7265;
+  filter: blur(125px);
+  position: absolute;
+  z-index: -1;
+}
+
 @media (max-width: 768px) {
   h1 {
     font-size: 3.052rem;
